@@ -1,0 +1,149 @@
+html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeria Artefaktura — Monika I. Betley</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f4f1ea;
+      color: #222;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 3em 20px 2em;
+      border-bottom: 1px solid #d4c9b5;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      letter-spacing: 4px;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #5a3f1a;
+    }
+
+    header p {
+      margin-top: 0.5em;
+      font-style: italic;
+      color: #7a5c2e;
+      font-size: 1em;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 20px;
+    }
+
+    @media (max-width: 600px) {
+      .columns {
+        grid-template-columns: 1fr;
+        gap: 2.5em;
+      }
+    }
+
+    .column h2 {
+      font-size: 1.1em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #5a3f1a;
+      font-weight: normal;
+      border-bottom: 1px solid #d4c9b5;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    .column ul {
+      list-style: none;
+    }
+
+    .column li {
+      margin-bottom: 0.8em;
+    }
+
+    .column a {
+      color: #7a5c2e;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom-color 0.2s;
+    }
+
+    .column a:hover {
+      border-bottom-color: #7a5c2e;
+    }
+
+    .column .description {
+      display: block;
+      font-size: 0.85em;
+      color: #888;
+      margin-top: 0.15em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3em 20px 2em;
+      font-size: 0.85em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galeria Artefaktura</h1>
+    <p>Monika I. Betley</p>
+  </header>
+
+  <div class="columns">
+
+    <div class="column">
+      <h2>Blog</h2>
+      <ul>
+        <li>
+          <a href="https://pisanki.bearblog.dev">Digital Carmina</a>
+          <span class="description">Blog na Bear Blog</span>
+        </li>
+        <li>
+          <a href="#">Substack</a>
+          <span class="description">Newsletter</span>
+        </li>
+        <!-- Dodaj kolejne linki tutaj -->
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Publikacje</h2>
+      <ul>
+        <li>
+          <a href="https://epublikator-cmyk.github.io/AMBER/">Amber</a>
+          <span class="description">Powieść o pamięci</span>
+        </li>
+        <li>
+          <a href="#">Na skraju muzyki</a>
+          <span class="description">Zbiór poezji</span>
+        </li>
+        <!-- Dodaj kolejne linki tutaj -->
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    © Monika I. Betley
+  </footer>
+
+</body>
+</html
